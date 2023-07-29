@@ -130,7 +130,6 @@ jobs:
         env:
           DOT_CONFIG: ${{ env.DEPLOYDIR }}/${{ env.TEMP_PREFIX }}.config
         run: |
-          mv $DOT_CONFIG .config
           make defconfig
 
       - name: 下载编译资源
